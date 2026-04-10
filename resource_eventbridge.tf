@@ -14,11 +14,6 @@ resource "aws_cloudwatch_event_rule" "health_event_rule" {
       ],
       "service": [ //Servicios desplegados en nuestra infraestructura sobre los que se desea detectar los eventos
         "IAM",
-        "EC2",
-        "ELASTICLOADBALANCING",
-        "ELASTICFILESYSTEM",
-        "RDS",
-        "SNS",
         "CLOUDWATCH"
       ]
     }
